@@ -1,3 +1,16 @@
+v 6.8.0
+  - Ability to at mention users that are participating in issue and merge req. discussion
+  - Enabled GZip Compression for assets in example Nginx, make sure that Nginx is compiled with --with-http_gzip_static_module flag (this is default in Ubuntu)
+  - Make user search case-insensitive (Christopher Arnold)
+  - Remove omniauth-ldap nickname bug workaround
+  - Drop all tables before restoring a Postgres backup
+
+v 6.7.2
+  - Fix upgrader script
+
+v 6.7.1
+  - Fix GitLab CI integration
+
 v 6.7.0
   - Increased the example Nginx client_max_body_size from 5MB to 20MB, consider updating it manually on existing installations
   - Add support for Gemnasium as a Project Service (Olivier Gonzalez)
